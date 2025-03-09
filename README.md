@@ -50,4 +50,5 @@ Funciones:
             "date?": "12/12/2025.10:00"
         }
 ```
-    Se programa/envía un correo con plantilla seleccionada del usuario y las variables. 
+ Se programa/envía un correo con plantilla seleccionada del usuario y las variables. 
+   
