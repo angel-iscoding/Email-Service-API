@@ -12,7 +12,7 @@ Funciones:
 - Entorno facil de implementar
 
 ## Como implementar
-
+```
 POST /api/clientes/registrar
     Body:
         {
@@ -21,12 +21,12 @@ POST /api/clientes/registrar
             "smtpUser": "miapp@gmail.com",
             "smtpPassword": "contraseña-smtp"
         }
-
+```
 1. Cada cliente tendrá que registrarse en la API ingresando sus credenciales SMTP de la cuenta que quiera enviar los correos.
 2. Una vez completado el registro. El servidor concederá un Token JWT que permitirá el uso de las diferentes funciones de la API.
 
 Funciones: 
-
+```
     POST:/templates/create
         Authorization: Bearer <JWT>
         Body: 
@@ -49,5 +49,5 @@ Funciones:
             },
             "date?": "12/12/2025.10:00"
         }
-
+```
     Se programa/envía un correo con plantilla seleccionada del usuario y las variables. 
